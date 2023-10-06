@@ -6,7 +6,6 @@ let questiontext;
   let rightans;
   let wrongans;
   let buttons = document.querySelectorAll(".ans");
-
 function fetchData(url) {
   return fetch(url)
     .then(async (response) => {
@@ -43,12 +42,15 @@ array.splice(randomIndex, 0, rightans);
   x.textContent = array[i++];
   x.style.fontWeight = 800;
   x.style.fontSize = "2vw";
+ 
+})
+})
+}
+buttons.forEach((x) => {
   x.addEventListener("click", (b) => {
     check(b, x);
     })
 })
-})
-}
 
 function check(b, x){
   if(b.target.textContent === rightans){
@@ -66,19 +68,14 @@ function check(b, x){
       }
       });
     }
-    setTimeout(()=> {
-    next();
+  setTimeout(()=> {
+     for(var i = 0; i < buttons.length; i++){
+    buttons[i].style.backgroundColor = "transparent";
+       };
+       start();
 }, 1000)
 };
 
-function next(){
-       for(var i = 0; i < buttons.length; i++){
-    buttons[i].style.backgroundColor = "transparent";
-       };
-       setTimeout(() => {
-     start();
-   }, 1000)
-};
 
 function resolve(args){
    const parser = new DOMParser();
