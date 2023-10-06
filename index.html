@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trivia Game</title>
+  <link rel="shortcut icon" type="image/x-icon" href="1.jpg">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+  <div class="navbar">
+    <h1>TRIVIA</h1>
+  </div>
+</header>
+<main>
+  <div class="home">
+<h1>Trivia Challenge <br> <span>Test Your Knowledge</span></h1>
+<img src="pngwing.png" alt="pngwing.png"></img>
+<div class="homeopt">
+  
+  <div class="mode">
+  <label for="MODE">MODE</label><br>
+  <select name="MODE" id="mode">
+    <option value="easy">Normal</option>
+    <option value="medium">Medium</option></option>
+    <option value="hard">Hard</option>
+  </select>
+  </div>
+  
+    <div class="category">
+  <label for="MODE">CATEGORY</label><br>
+  <select name="Category" id="category">
+    <option value="9">General Knowledge</option>
+    <option value="10">Books</option></option>
+    <option value="11">Flims</option>
+    <option value="12">Music</option>
+    <option value="13">Musicals & Theaters</option>
+    <option value="14">Television</option>
+    <option value="15">Video Games</option>
+    <option value="16">Board Games</option>
+    <option value="17">Science & Nature</option>
+    <option value="18">Computer Science</option>
+    <option value="19">Mathematics</option>
+    <option value="20">Mythology</option>
+    <option value="21">Sports</option>
+    <option value="22">Geography</option>
+    <option value="23">History</option>
+    <option value="24">Politics</option>
+    <option value="25">Arts</option>
+    <option value="26">Celebrities</option>
+    <option value="27">Animals</option>
+    <option value="28">Vehicles</option>
+    <option value="29">Comics</option>
+    <option value="30">Gadgets</option>
+    <option value="31">Japanese Anime Manga</option>
+    <option value="32">Cartoons & Animatios</option>
+  </select>
+  </div>
+</div>
+ <button onclick="start()">Start</button>
+  </div>
+  
+  <div class="container">
+    <div class="triviabox">
+    <h1><b>Question : Loading...</b></h1>
+    
+<div class="ans">
+<h1>1. Loading...</h1>
+</div>
+<div class="ans">
+<h1>2. Loading... </h1>
+</div>
+<div class="ans">
+<h1>3. Loading... </h1>
+</div>
+<div class="ans">
+<h1>4. Loading...</h1>
+</div>
+    </div>
+      <div class="triviabtn">
+  <button class="skip" onclick="start()">Skip?</button>
+    <button class="rhome" onclick="rhome()">Home</button>
+</div>
+  </div>
+
+</main>
+<script src="main.js"></script>
+</body>
+
+</html>
