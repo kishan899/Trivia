@@ -90,7 +90,8 @@ main {
 .home {
   display: flex;
   flex-direction: column;
-  margin-top: 20%;
+  margin-top: 10%;
+  margin-bottom: 5%;
   backdrop-filter: blur(2px);
   animation: flipIn 1s ease-in-out;
 }
@@ -153,7 +154,7 @@ main {
 }
 
 .homeopt #mode {
-  padding: 20px;
+  padding: 10px;
   border: 1.5px solid white;
   border-radius: 5px;
   background-color: transparent;
@@ -165,7 +166,7 @@ main {
 }
 
 .homeopt #category {
-  padding: 20px;
+  padding: 10px;
   border: 1.5px solid white;
   border-radius: 5px;
   background-color: transparent;
@@ -193,29 +194,63 @@ main {
   outline: none;
   box-shadow: 0 0 5px white;
 }
-#audio:active {
+
+#audiodiv:active {
   scale: 0.9;
   box-shadow: 0 0 10px white;
 }
 
-#audio{
+#audiodiv {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
+  padding: 10px;
   border: 1.5px solid white;
   border-radius: 5px;
   background-color: transparent;
-  font-size: 16px;
   font-weight: 600;
-  appearance: none;
-  transition: all 0.2s ease;
+  transition: all 0.1s ease;
 }
-#audio i{
-  font-size: 30px;
+
+#audiodiv i {
+  margin: 0 10px;
+  display: flex;
+  font-size: 25px;
   color: black;
 }
-.home button{
+
+#audiodiv #volumeSlider {
+  display: none;
+  width: 80%;
+  appearance: none;
+  background: black;
+  height: 5px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#audiodiv #volumeSlider::-webkit-slider-thumb {
+ -webkit-appearance: none;
+  appearance: none;
+  width: 8px;
+  height: 8px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: -400px 0 0 400px white;
+}
+
+#audiodiv .span1 {
+  display: block;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  color: black;
+  margin: 0 5px;
+}
+
+.home button {
   width: 30%;
   margin: auto;
   padding: 5px;
@@ -226,6 +261,7 @@ main {
   border-radius: 5px;
   transition: all 0.3s ease;
 }
+
 .home button:active {
   scale: 0.9;
 }

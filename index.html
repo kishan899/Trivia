@@ -25,7 +25,7 @@ Okey
 <h1>Trivia Challenge <br> <span>Test Your Knowledge</span></h1>
 <img src="pngwing.png" alt="pngwing.png"></img>
 <div class="homeopt">
-  
+  <audio id="myAudio"></audio>
   <div class="mode">
   <label for="MODE">MODE</label><br>
   <select name="MODE" id="mode">
@@ -64,9 +64,13 @@ Okey
     <option value="32">Cartoons & Animatios</option>
   </select>
   </div>
-  <div id="audio">
+  <div id="audidivlabel">
+  <label for="audiodiv">Audio</label>
+  <div id="audiodiv">
+     <span class="span1">0</span><input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1" onchange="updateVolume()">
    <i onclick="sounds()" class="fa fa-volume-up" aria-hidden="true"></i> 
     </div>
+  </div>
 </div>
  <button onclick="start()">Start</button>
   </div>
