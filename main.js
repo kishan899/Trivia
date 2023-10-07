@@ -148,7 +148,7 @@ audiodiv.addEventListener("mouseenter", () => {
   volumeSlider.style.display = "block"
 });
 audiodiv.addEventListener("mouseout", () => {
-  volumeSlider.style.display = "block"
+  volumeSlider.style.display = "none"
 })
 
 function updateVolume() {
